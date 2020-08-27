@@ -76,9 +76,9 @@ export default {
           this.$store.dispatch('updateUser', user)
           this.$router.push('/')
         })
-        .catch(error => {
-          alert(error)
-        })
+        .catch(()=> {
+          this.formHasErrors= true
+          })
       }
     }
   },
